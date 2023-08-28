@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Chicle&family=Heebo:wght@700;800;900&family=Poppins:wght@600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logoImg{
+    width: 150px;
+    position: relative;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logoImg.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 1s;
+}
+
+.logoImg.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 1s;
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    background: url("imagens/bg-main.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    top: 8%;
+    left: -1%;
+    display: block;
+}
+
+header > img{
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.gameContainer{
+    position: relative;
+    width: 100%;
+    max-width: 327px;
+    height: 261px;
+    top: 32%;
+    left: 50%;
+    box-shadow: inset 0px 0px 20px #3f0808, 0 0 2px #897960;
+    transform: translateX(-50%);
+    background: linear-gradient(to bottom, #dd4848 0%, #ff9d40 96%);
+    border-radius: 10px;
+}
+
+.btn{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.btnGerador{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 94%;
+    font-size: 25px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn > img {
+
+}
+
+li > img{
+    width: 100px;
+    height: 100px;
+}
+
+.btnStatic, .btnAnimated{
+    width: 100%;
+    max-width: 327px;
+    position: absolute;
+    top: 95%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.btnStatic{
+    display: block;
+}
+
+.btnAnimated{
+    display: none;
+}
+
+.thingGif{
+    width: 100%;
+    max-width: 75px;
+    position: absolute;
+    left: 76%;
+}
+
+.thingGif02{
+    width: 100%;
+    max-width: 75px;
+    position: absolute;
+    left: 20%;
+}
+
+.iconEntrada{
+    display: none;
+    width: 100%;
+    max-width: 65px;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+}
+
+.iconValidade{
+    display: none;
+    width: 100%;
+    max-width: 50px;
+    position: absolute;
+    top: 58%;
+    lefT: 10%;
+}
+
+.multVezes{
+    width: 100%;
+    max-width: 200px;
+    position: absolute;
+    border-radius: 10px;
+    top: 37%;
+    left: 27%;
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    background: #811717;
+    font-family: 'Poppins', sans-serif;
+}
+
+.timeRemaining{
+    width: 100%;
+    max-width: 200px;
+    position: absolute;
+    border-radius: 10px;
+    top: 63%;
+    left: 27%;
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    background: #811717;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.iframe{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+iframe{
+    width: 100%;
+    margin: 0 auto;
+    height: 600px;
+}
